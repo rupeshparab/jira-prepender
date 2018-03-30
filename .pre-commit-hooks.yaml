@@ -1,0 +1,8 @@
+-   id: jira-prepender
+    name: Jira Prepender
+    desc: Appends ticket number before commit message
+    entry: jira-prepender.sh
+    language: script
+    files: ''
+    always_run: true
+    stages: [commit-msg]
