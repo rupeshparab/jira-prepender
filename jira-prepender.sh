@@ -4,7 +4,6 @@ set -e
 
 COMMIT_FILE=$1
 COMMIT_MSG=$(cat $1)
-echo "$COMMIT_MSG"
 if [[ ! -z "$(git rev-parse -q --verify MERGE_HEAD)" ]]; then
     echo "JIRA check skipped for merge commit"
 else
